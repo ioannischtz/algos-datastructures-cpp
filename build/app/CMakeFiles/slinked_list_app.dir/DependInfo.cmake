@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/app/data_structures_app.cpp" "app/CMakeFiles/data_structures_app.dir/data_structures_app.cpp.o" "gcc" "app/CMakeFiles/data_structures_app.dir/data_structures_app.cpp.o.d"
+  "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/app/slinked_list_app.cpp" "app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o" "gcc" "app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

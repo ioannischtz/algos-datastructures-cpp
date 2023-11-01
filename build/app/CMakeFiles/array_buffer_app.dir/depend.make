@@ -1,2 +1,2 @@
-# Empty dependencies file for data_structures_app.
+# Empty dependencies file for array_buffer_app.
 # This may be replaced when dependencies are built.

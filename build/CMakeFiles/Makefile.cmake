@@ -82,5 +82,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "src/CMakeFiles/adder.dir/DependInfo.cmake"
   "tests/CMakeFiles/tests.dir/DependInfo.cmake"
-  "app/CMakeFiles/data_structures_app.dir/DependInfo.cmake"
+  "app/CMakeFiles/array_buffer_app.dir/DependInfo.cmake"
+  "app/CMakeFiles/slinked_list_app.dir/DependInfo.cmake"
   )

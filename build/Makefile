@@ -517,17 +517,30 @@ tests/fast:
 .PHONY : tests/fast
 
 #=============================================================================
-# Target rules for targets named data_structures_app
+# Target rules for targets named array_buffer_app
 
 # Build rule for target.
-data_structures_app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_structures_app
-.PHONY : data_structures_app
+array_buffer_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array_buffer_app
+.PHONY : array_buffer_app
 
 # fast build rule for target.
-data_structures_app/fast:
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/data_structures_app.dir/build.make app/CMakeFiles/data_structures_app.dir/build
-.PHONY : data_structures_app/fast
+array_buffer_app/fast:
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/array_buffer_app.dir/build.make app/CMakeFiles/array_buffer_app.dir/build
+.PHONY : array_buffer_app/fast
+
+#=============================================================================
+# Target rules for targets named slinked_list_app
+
+# Build rule for target.
+slinked_list_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 slinked_list_app
+.PHONY : slinked_list_app
+
+# fast build rule for target.
+slinked_list_app/fast:
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/slinked_list_app.dir/build.make app/CMakeFiles/slinked_list_app.dir/build
+.PHONY : slinked_list_app/fast
 
 # Help Target
 help:
@@ -567,7 +580,8 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... adder"
-	@echo "... data_structures_app"
+	@echo "... array_buffer_app"
+	@echo "... slinked_list_app"
 	@echo "... tests"
 .PHONY : help
 

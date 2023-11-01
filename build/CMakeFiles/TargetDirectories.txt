@@ -37,7 +37,8 @@
 /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests/CMakeFiles/test.dir
 /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests/CMakeFiles/edit_cache.dir
 /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests/CMakeFiles/rebuild_cache.dir
-/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/CMakeFiles/data_structures_app.dir
+/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/CMakeFiles/array_buffer_app.dir
+/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/CMakeFiles/slinked_list_app.dir
 /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/CMakeFiles/test.dir
 /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/CMakeFiles/edit_cache.dir
 /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/CMakeFiles/rebuild_cache.dir

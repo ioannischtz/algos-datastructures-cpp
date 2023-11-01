@@ -112,7 +112,8 @@ clean: app/clean
 # Directory level rules for directory app
 
 # Recursive "all" directory target.
-app/all: app/CMakeFiles/data_structures_app.dir/all
+app/all: app/CMakeFiles/array_buffer_app.dir/all
+app/all: app/CMakeFiles/slinked_list_app.dir/all
 .PHONY : app/all
 
 # Recursive "preinstall" directory target.
@@ -120,7 +121,8 @@ app/preinstall:
 .PHONY : app/preinstall
 
 # Recursive "clean" directory target.
-app/clean: app/CMakeFiles/data_structures_app.dir/clean
+app/clean: app/CMakeFiles/array_buffer_app.dir/clean
+app/clean: app/CMakeFiles/slinked_list_app.dir/clean
 .PHONY : app/clean
 
 #=============================================================================
@@ -914,7 +916,7 @@ src/CMakeFiles/adder.dir/clean:
 tests/CMakeFiles/tests.dir/all: src/CMakeFiles/adder.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=5,6,7 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=7,8,9 "Built target tests"
 .PHONY : tests/CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -934,30 +936,56 @@ tests/CMakeFiles/tests.dir/clean:
 .PHONY : tests/CMakeFiles/tests.dir/clean
 
 #=============================================================================
-# Target rules for target app/CMakeFiles/data_structures_app.dir
+# Target rules for target app/CMakeFiles/array_buffer_app.dir
 
 # All Build rule for target.
-app/CMakeFiles/data_structures_app.dir/all:
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/data_structures_app.dir/build.make app/CMakeFiles/data_structures_app.dir/depend
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/data_structures_app.dir/build.make app/CMakeFiles/data_structures_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=3,4 "Built target data_structures_app"
-.PHONY : app/CMakeFiles/data_structures_app.dir/all
+app/CMakeFiles/array_buffer_app.dir/all:
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/array_buffer_app.dir/build.make app/CMakeFiles/array_buffer_app.dir/depend
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/array_buffer_app.dir/build.make app/CMakeFiles/array_buffer_app.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=3,4 "Built target array_buffer_app"
+.PHONY : app/CMakeFiles/array_buffer_app.dir/all
 
 # Build rule for subdir invocation for target.
-app/CMakeFiles/data_structures_app.dir/rule: cmake_check_build_system
+app/CMakeFiles/array_buffer_app.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/data_structures_app.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/array_buffer_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles 0
-.PHONY : app/CMakeFiles/data_structures_app.dir/rule
+.PHONY : app/CMakeFiles/array_buffer_app.dir/rule
 
 # Convenience name for target.
-data_structures_app: app/CMakeFiles/data_structures_app.dir/rule
-.PHONY : data_structures_app
+array_buffer_app: app/CMakeFiles/array_buffer_app.dir/rule
+.PHONY : array_buffer_app
 
 # clean rule for target.
-app/CMakeFiles/data_structures_app.dir/clean:
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/data_structures_app.dir/build.make app/CMakeFiles/data_structures_app.dir/clean
-.PHONY : app/CMakeFiles/data_structures_app.dir/clean
+app/CMakeFiles/array_buffer_app.dir/clean:
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/array_buffer_app.dir/build.make app/CMakeFiles/array_buffer_app.dir/clean
+.PHONY : app/CMakeFiles/array_buffer_app.dir/clean
+
+#=============================================================================
+# Target rules for target app/CMakeFiles/slinked_list_app.dir
+
+# All Build rule for target.
+app/CMakeFiles/slinked_list_app.dir/all:
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/slinked_list_app.dir/build.make app/CMakeFiles/slinked_list_app.dir/depend
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/slinked_list_app.dir/build.make app/CMakeFiles/slinked_list_app.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=5,6 "Built target slinked_list_app"
+.PHONY : app/CMakeFiles/slinked_list_app.dir/all
+
+# Build rule for subdir invocation for target.
+app/CMakeFiles/slinked_list_app.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/slinked_list_app.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles 0
+.PHONY : app/CMakeFiles/slinked_list_app.dir/rule
+
+# Convenience name for target.
+slinked_list_app: app/CMakeFiles/slinked_list_app.dir/rule
+.PHONY : slinked_list_app
+
+# clean rule for target.
+app/CMakeFiles/slinked_list_app.dir/clean:
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/slinked_list_app.dir/build.make app/CMakeFiles/slinked_list_app.dir/clean
+.PHONY : app/CMakeFiles/slinked_list_app.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
