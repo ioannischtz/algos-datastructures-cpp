@@ -127,42 +127,80 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-app/CMakeFiles/data_structures_app.dir/rule:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/data_structures_app.dir/rule
-.PHONY : app/CMakeFiles/data_structures_app.dir/rule
+app/CMakeFiles/array_buffer_app.dir/rule:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/array_buffer_app.dir/rule
+.PHONY : app/CMakeFiles/array_buffer_app.dir/rule
 
 # Convenience name for target.
-data_structures_app: app/CMakeFiles/data_structures_app.dir/rule
-.PHONY : data_structures_app
+array_buffer_app: app/CMakeFiles/array_buffer_app.dir/rule
+.PHONY : array_buffer_app
 
 # fast build rule for target.
-data_structures_app/fast:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/data_structures_app.dir/build.make app/CMakeFiles/data_structures_app.dir/build
-.PHONY : data_structures_app/fast
+array_buffer_app/fast:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/array_buffer_app.dir/build.make app/CMakeFiles/array_buffer_app.dir/build
+.PHONY : array_buffer_app/fast
 
-data_structures_app.o: data_structures_app.cpp.o
-.PHONY : data_structures_app.o
+# Convenience name for target.
+app/CMakeFiles/slinked_list_app.dir/rule:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/slinked_list_app.dir/rule
+.PHONY : app/CMakeFiles/slinked_list_app.dir/rule
+
+# Convenience name for target.
+slinked_list_app: app/CMakeFiles/slinked_list_app.dir/rule
+.PHONY : slinked_list_app
+
+# fast build rule for target.
+slinked_list_app/fast:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/slinked_list_app.dir/build.make app/CMakeFiles/slinked_list_app.dir/build
+.PHONY : slinked_list_app/fast
+
+array_buffer_app.o: array_buffer_app.cpp.o
+.PHONY : array_buffer_app.o
 
 # target to build an object file
-data_structures_app.cpp.o:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/data_structures_app.dir/build.make app/CMakeFiles/data_structures_app.dir/data_structures_app.cpp.o
-.PHONY : data_structures_app.cpp.o
+array_buffer_app.cpp.o:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/array_buffer_app.dir/build.make app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o
+.PHONY : array_buffer_app.cpp.o
 
-data_structures_app.i: data_structures_app.cpp.i
-.PHONY : data_structures_app.i
+array_buffer_app.i: array_buffer_app.cpp.i
+.PHONY : array_buffer_app.i
 
 # target to preprocess a source file
-data_structures_app.cpp.i:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/data_structures_app.dir/build.make app/CMakeFiles/data_structures_app.dir/data_structures_app.cpp.i
-.PHONY : data_structures_app.cpp.i
+array_buffer_app.cpp.i:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/array_buffer_app.dir/build.make app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.i
+.PHONY : array_buffer_app.cpp.i
 
-data_structures_app.s: data_structures_app.cpp.s
-.PHONY : data_structures_app.s
+array_buffer_app.s: array_buffer_app.cpp.s
+.PHONY : array_buffer_app.s
 
 # target to generate assembly for a file
-data_structures_app.cpp.s:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/data_structures_app.dir/build.make app/CMakeFiles/data_structures_app.dir/data_structures_app.cpp.s
-.PHONY : data_structures_app.cpp.s
+array_buffer_app.cpp.s:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/array_buffer_app.dir/build.make app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.s
+.PHONY : array_buffer_app.cpp.s
+
+slinked_list_app.o: slinked_list_app.cpp.o
+.PHONY : slinked_list_app.o
+
+# target to build an object file
+slinked_list_app.cpp.o:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/slinked_list_app.dir/build.make app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o
+.PHONY : slinked_list_app.cpp.o
+
+slinked_list_app.i: slinked_list_app.cpp.i
+.PHONY : slinked_list_app.i
+
+# target to preprocess a source file
+slinked_list_app.cpp.i:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/slinked_list_app.dir/build.make app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.i
+.PHONY : slinked_list_app.cpp.i
+
+slinked_list_app.s: slinked_list_app.cpp.s
+.PHONY : slinked_list_app.s
+
+# target to generate assembly for a file
+slinked_list_app.cpp.s:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/slinked_list_app.dir/build.make app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.s
+.PHONY : slinked_list_app.cpp.s
 
 # Help Target
 help:
@@ -173,10 +211,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... data_structures_app"
-	@echo "... data_structures_app.o"
-	@echo "... data_structures_app.i"
-	@echo "... data_structures_app.s"
+	@echo "... array_buffer_app"
+	@echo "... slinked_list_app"
+	@echo "... array_buffer_app.o"
+	@echo "... array_buffer_app.i"
+	@echo "... array_buffer_app.s"
+	@echo "... slinked_list_app.o"
+	@echo "... slinked_list_app.i"
+	@echo "... slinked_list_app.s"
 .PHONY : help
 
 

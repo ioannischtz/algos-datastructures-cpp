@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/app/adder_app.cpp" "app/CMakeFiles/adder_app.dir/adder_app.cpp.o" "gcc" "app/CMakeFiles/adder_app.dir/adder_app.cpp.o.d"
+  "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/app/array_buffer_app.cpp" "app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o" "gcc" "app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

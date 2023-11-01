@@ -1,2 +1,2 @@
-# Empty dependencies file for data_structures.
+# Empty dependencies file for slinked_list_app.
 # This may be replaced when dependencies are built.
