@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/src",
+  "command": "/usr/bin/c++  -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/src/../include/adder -Wall -Wextra -Wunused-parameter -Wformat -Wnarrowing -Wno-sign-conversion -Wno-error=declaration-after-statement -Wno-deprecated-copy -o CMakeFiles/adder.dir/adder.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/src/adder.cpp",
+  "file": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/src/adder.cpp",
+  "output": "src/CMakeFiles/adder.dir/adder.cpp.o"
+},
+{
+  "directory": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests",
+  "command": "/usr/bin/c++  -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/../ext -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/src/../include/adder -Wall -Wextra -Wunused-parameter -Wformat -Wnarrowing -Wno-sign-conversion -Wno-error=declaration-after-statement -Wno-deprecated-copy -o CMakeFiles/tests.dir/tests.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/tests.cpp",
+  "file": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/tests.cpp",
+  "output": "tests/CMakeFiles/tests.dir/tests.cpp.o"
+},
+{
+  "directory": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests",
+  "command": "/usr/bin/c++  -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/../ext -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/src/../include/adder -Wall -Wextra -Wunused-parameter -Wformat -Wnarrowing -Wno-sign-conversion -Wno-error=declaration-after-statement -Wno-deprecated-copy -o CMakeFiles/tests.dir/adder_t.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/adder_t.cpp",
+  "file": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/adder_t.cpp",
+  "output": "tests/CMakeFiles/tests.dir/adder_t.cpp.o"
+},
+{
+  "directory": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app",
+  "command": "/usr/bin/c++  -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/app/../include/data_structures -Wall -Wextra -Wunused-parameter -Wformat -Wnarrowing -Wno-sign-conversion -Wno-error=declaration-after-statement -Wno-deprecated-copy -o CMakeFiles/data_structures_app.dir/data_structures_app.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/app/data_structures_app.cpp",
+  "file": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/app/data_structures_app.cpp",
+  "output": "app/CMakeFiles/data_structures_app.dir/data_structures_app.cpp.o"
+}
+]

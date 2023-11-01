@@ -1,0 +1,88 @@
+---
+Checks: "-*,"
+WarningsAsErrors: "*"
+HeaderFilterRegex: ".*"
+AnalyzeTemporaryDtors: true
+CheckOptions:
+  - key: readability-identifier-naming.FunctionCase
+    value: CamelCase
+  - key: readability-identifier-naming.VariableCase
+    value: snake_case
+  - key: readability-identifier-naming.TypeCase
+    value: CamelCase
+  - key: readability-identifier-naming.EnumCase
+    value: PascalCase
+  - key: readability-identifier-naming.ConstantCase
+    value: SCREAMING_SNAKE_CASE
+  - key: readability-identifier-naming.GlobalConstantCase
+    value: SCREAMING_SNAKE_CASE
+  - key: readability-identifier-naming.ConstantStyle
+    value: upper_case
+  - key: readability-identifier-naming.GlobalConstantStyle
+    value: upper_case
+  - key: readability-identifier-naming.VariableStyle
+    value: lower_case
+  - key: readability-identifier-naming.FunctionStyle
+    value: lower_case
+  - key: readability-identifier-naming.ParameterStyle
+    value: lower_case
+  - key: readability-identifier-naming.TypeStyle
+    value: UpperCamelCase
+  - key: readability-identifier-naming.EnumStyle
+    value: UpperCamelCase
+  - key: readability-identifier-naming.NamespaceCase
+    value: snake_case
+  - key: readability-identifier-naming.NamespaceStyle
+    value: lower_case
+  - key: modernize-use-auto
+    value: 1
+  - key: modernize-raw-string-literal
+    value: 1
+  - key: readability-braces-around-statements
+    value: 1
+  - key: readability-delete-null-pointer
+    value: 1
+  - key: readability-redundant-control-flow
+    value: 1
+  - key: readability-implicit-bool-cast
+    value: 1
+  - key: readability-inconsistent-declaration-parameter-name
+    value: 1
+  - key: readability-misleading-indentation
+    value: 1
+  - key: readability-simplify-boolean-expr
+    value: 1
+  - key: readability-container-size-empty
+    value: 1
+  - key: performance-inefficient-string-concatenation
+    value: 1
+  - key: performance-move-const-arg
+    value: 1
+  - key: performance-unnecessary-value-param
+    value: 1
+  - key: modernize-use-nullptr
+    value: 1
+  - key: modernize-use-emplace
+    value: 1
+  - key: modernize-use-equals-default
+    value: 1
+  - key: modernize-use-equals-delete
+    value: 1
+  - key: modernize-use-using
+    value: 1
+  - key: readability-avoid-const-params-in-decls
+    value: 1
+  - key: readability-identifier-naming
+    value: 1
+  - key: readability-function-cognitive-complexity
+    value: 1
+  - key: bugprone-use-after-move
+    value: 1
+  - key: bugprone-undefined-memory-manipulation
+    value: 1
+  - key: cppcoreguidelines-pro-type-member-init
+    value: 1
+  - key: misc-definitions-in-headers
+    value: 1
+  - key: llvmlibc-restrict-system-libc-headers
+    value: "false"
