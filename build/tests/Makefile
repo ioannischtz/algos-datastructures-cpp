@@ -140,29 +140,29 @@ tests/fast:
 	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
-adder_t.o: adder_t.cpp.o
-.PHONY : adder_t.o
+slinked_list_t.o: slinked_list_t.cpp.o
+.PHONY : slinked_list_t.o
 
 # target to build an object file
-adder_t.cpp.o:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/adder_t.cpp.o
-.PHONY : adder_t.cpp.o
+slinked_list_t.cpp.o:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/slinked_list_t.cpp.o
+.PHONY : slinked_list_t.cpp.o
 
-adder_t.i: adder_t.cpp.i
-.PHONY : adder_t.i
+slinked_list_t.i: slinked_list_t.cpp.i
+.PHONY : slinked_list_t.i
 
 # target to preprocess a source file
-adder_t.cpp.i:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/adder_t.cpp.i
-.PHONY : adder_t.cpp.i
+slinked_list_t.cpp.i:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/slinked_list_t.cpp.i
+.PHONY : slinked_list_t.cpp.i
 
-adder_t.s: adder_t.cpp.s
-.PHONY : adder_t.s
+slinked_list_t.s: slinked_list_t.cpp.s
+.PHONY : slinked_list_t.s
 
 # target to generate assembly for a file
-adder_t.cpp.s:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/adder_t.cpp.s
-.PHONY : adder_t.cpp.s
+slinked_list_t.cpp.s:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/slinked_list_t.cpp.s
+.PHONY : slinked_list_t.cpp.s
 
 tests.o: tests.cpp.o
 .PHONY : tests.o
@@ -198,9 +198,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... tests"
-	@echo "... adder_t.o"
-	@echo "... adder_t.i"
-	@echo "... adder_t.s"
+	@echo "... slinked_list_t.o"
+	@echo "... slinked_list_t.i"
+	@echo "... slinked_list_t.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"

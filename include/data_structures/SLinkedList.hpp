@@ -9,11 +9,11 @@ namespace data_structures {
 
 template <typename T> class SNode {
 public:
-  // Constructor to initialize the element and set the next pointer to nullptr
-  SNode(const T &elm) : element(elm), next(nullptr) {
+  // Constructor to initialize the data and set the next pointer to nullptr
+  SNode(const T &elm) : data(elm), next(nullptr) {
     std::cout << "SNode: ctor with elm" << std::endl;
   }
-  SNode() : element(), next{nullptr} {
+  SNode() : data(), next{nullptr} {
     std::cout << "SNode: default ctor" << std::endl;
   }
   SNode(const SNode &other);
@@ -26,13 +26,15 @@ public:
   }
 
 public:
-  [[nodiscard]] auto getElement() const -> const T &;
-  [[nodiscard]] auto getNext() const -> std::optional<SNode<T> *>;
-  auto setElement(T elm) -> void;
+  [[nodiscard]] auto getData() -> T &;
+  [[nodiscard]] auto getData() const -> const T &;
+  [[nodiscard]] auto getNext() -> std::unique_ptr<SNode<T>>;
+  [[nodiscard]] auto getNext() const -> std::unique_ptr<SNode<T>>;
+  auto setData(T elm) -> void;
   auto setNext(std::unique_ptr<SNode<T>> next_node) -> void;
 
 private:
-  T element;
+  T data;
   std::unique_ptr<SNode<T>> next;
 };
 
@@ -57,19 +59,24 @@ public:
   auto isEmpty() const -> bool;
   auto isFirst(const SNode<T> &node) const -> bool;
   auto isLast(const SNode<T> &node) const -> bool;
-  [[nodiscard]] auto first() const -> std::optional<SNode<T> *>;
-  [[nodiscard]] auto last() const -> std::optional<SNode<T> *>;
-  [[nodiscard]] auto getElementAt(size_t index) -> std::optional<T>;
-  [[nodiscard]] auto find(const T &element) const -> std::optional<SNode<T> *>;
-  [[nodiscard]] auto findAll(const T &element) const
-      -> std::optional<std::vector<SNode<T> *>>;
+  [[nodiscard]] auto first() const -> std::optional<std::unique_ptr<SNode<T>>>;
+  [[nodiscard]] auto last() const -> std::optional<std::unique_ptr<SNode<T>>>;
+  [[nodiscard]] auto getDataAt(size_t index) -> std::optional<T>;
+  [[nodiscard]] auto find(const T &data) const
+      -> std::optional<std::unique_ptr<SNode<T>>>;
+  [[nodiscard]] auto findAll(const T &data) const
+      -> std::optional<std::vector<std::unique_ptr<SNode<T>>>>;
 
   // Modifiers
-  [[nodiscard]] auto insertFirst(const T &element) -> SNode<T> *;
-  [[nodiscard]] auto insertAfter(SNode<T> *node, const T &element)
-      -> std::optional<SNode<T> *>;
-  [[nodiscard]] auto removeAfter(SNode<T> &node) -> std::optional<T>;
-  [[nodiscard]] auto remove(SNode<T> *node) -> std::optional<T>;
+  [[nodiscard]] auto insertFirst(const T &data) -> std::unique_ptr<SNode<T>>;
+  [[nodiscard]] auto insertLast(const T &data) -> std::unique_ptr<SNode<T>>;
+  [[nodiscard]] auto insertAfter(SNode<T> *node, const T &data)
+      -> std::optional<std::unique_ptr<SNode<T>>>;
+  [[nodiscard]] auto insertAt(size_t index, const T &data) -> std::optional<T>;
+  [[nodiscard]] auto removeAfter(SNode<T> *node) -> std::optional<T>;
+  [[nodiscard]] auto remove(const T &data) -> std::optional<T>;
+  [[nodiscard]] auto removeAt(size_t indx) -> std::optional<T>;
+
   auto clear() -> void;
 
   // print

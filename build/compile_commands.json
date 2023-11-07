@@ -7,15 +7,15 @@
 },
 {
   "directory": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests",
-  "command": "/usr/bin/c++  -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/../ext -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/src/../include/adder -Wall -Wextra -Wunused-parameter -Wformat -Wnarrowing -Wno-sign-conversion -Wno-error=declaration-after-statement -Wno-deprecated-copy -o CMakeFiles/tests.dir/tests.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/tests.cpp",
+  "command": "/usr/bin/c++  -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/../include/data_structures -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/../ext -Wall -Wextra -Wunused-parameter -Wformat -Wnarrowing -Wno-sign-conversion -Wno-error=declaration-after-statement -Wno-deprecated-copy -o CMakeFiles/tests.dir/tests.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/tests.cpp",
   "file": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/tests.cpp",
   "output": "tests/CMakeFiles/tests.dir/tests.cpp.o"
 },
 {
   "directory": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests",
-  "command": "/usr/bin/c++  -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/../ext -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/src/../include/adder -Wall -Wextra -Wunused-parameter -Wformat -Wnarrowing -Wno-sign-conversion -Wno-error=declaration-after-statement -Wno-deprecated-copy -o CMakeFiles/tests.dir/adder_t.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/adder_t.cpp",
-  "file": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/adder_t.cpp",
-  "output": "tests/CMakeFiles/tests.dir/adder_t.cpp.o"
+  "command": "/usr/bin/c++  -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/../include/data_structures -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/../ext -Wall -Wextra -Wunused-parameter -Wformat -Wnarrowing -Wno-sign-conversion -Wno-error=declaration-after-statement -Wno-deprecated-copy -o CMakeFiles/tests.dir/slinked_list_t.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/slinked_list_t.cpp",
+  "file": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/slinked_list_t.cpp",
+  "output": "tests/CMakeFiles/tests.dir/slinked_list_t.cpp.o"
 },
 {
   "directory": "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app",

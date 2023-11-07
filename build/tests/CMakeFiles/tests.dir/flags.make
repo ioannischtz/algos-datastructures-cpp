@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/../ext -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/src/../include/adder
+CXX_INCLUDES = -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/../include/data_structures -I/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/../ext
 
 CXX_FLAGS = -Wall -Wextra -Wunused-parameter -Wformat -Wnarrowing -Wno-sign-conversion -Wno-error=declaration-after-statement -Wno-deprecated-copy
 
