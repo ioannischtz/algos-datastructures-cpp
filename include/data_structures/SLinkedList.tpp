@@ -252,7 +252,7 @@ auto SLinkedList<T>::getDataAt(size_t index) -> std::optional<T> {
     current = current->getNext();
   }
   // Return the data at the specified index
-  return std::optional<T>(current->getData());
+  return std::optional<T>(current->getDataCopy());
 }
 
 template <typename T>
@@ -506,7 +506,7 @@ auto SLinkedList<T>::removeAt(size_t index) -> std::optional<T> {
 
   if (current) {
     removed_data = std::make_optional(current->getDataCopy());
-    prev->setNext(std::move(current->ownNext()));
+    prev->setNext(current->ownNext());
     length--;
   }
 
