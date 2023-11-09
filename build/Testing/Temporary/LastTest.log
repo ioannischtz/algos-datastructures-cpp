@@ -1,3 +1,55 @@
-Start testing: Nov 06 21:18 EET
+Start testing: Nov 09 15:43 EET
 ----------------------------------------------------------
-End testing: Nov 06 21:18 EET
+1/1 Testing: SLinkedList basic operations
+1/1 Test: SLinkedList basic operations
+Command: "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests" "SLinkedList basic operations"
+Directory: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests
+"SLinkedList basic operations" start time: Nov 09 15:43 EET
+Output:
+----------------------------------------------------------
+Filters: SLinkedList basic operations
+SLinkedList: Default Ctor
+SLinkedList: isEmpty()
+SLinkedList: getLength()
+SLinkedList: Dtor
+SLinkedList: clear()
+SLinkedList: Default Ctor
+SLinkedList: insertFirst()
+SNode: ctor with elm
+SLinkedList: isEmpty()
+SNode: ctor with elm
+SLinkedList: isEmpty()
+SLinkedList: isEmpty()
+SLinkedList: getLength()
+SLinkedList: first()
+SLinkedList: isEmpty()
+SLinkedList: last()
+SLinkedList: isEmpty()
+SLinkedList: Dtor
+SLinkedList: clear()
+SNode: Dtor
+SNode: Dtor
+SLinkedList: Default Ctor
+SLinkedList: insertFirst()
+SNode: ctor with elm
+SLinkedList: isEmpty()
+SNode: ctor with elm
+SLinkedList: isEmpty()
+SNode: Dtor
+SNode: Dtor
+SLinkedList: isEmpty()
+SLinkedList: getLength()
+SLinkedList: Dtor
+SLinkedList: clear()
+===============================================================================
+All tests passed (14 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SLinkedList basic operations" end time: Nov 09 15:43 EET
+"SLinkedList basic operations" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 09 15:43 EET

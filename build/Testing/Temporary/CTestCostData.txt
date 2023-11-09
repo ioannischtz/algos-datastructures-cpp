@@ -51,4 +51,7 @@ SLinkedList: 0 1
 SLinkedList: 0 0
 SLinkedList: 0 1
 SLinkedList: 0 1
+SLinkedList 0 0
+SLinkedList 0 0
+SLinkedList basic operations 1 0.00378101
 ---

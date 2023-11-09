@@ -11,8 +11,8 @@ TEST_CASE("SLinkedList basic operations", "[SLinkedList]") {
   }
 
   SECTION("Insert and retrieve elements") {
-    list.insertFirst(1);
-    list.insertLast(2);
+    auto firstNode_ptr = list.insertFirst(1);
+    auto lastNode_ptr = list.insertLast(2);
 
     REQUIRE(list.isEmpty() == false);
     REQUIRE(list.getLength() == 2);
@@ -23,13 +23,13 @@ TEST_CASE("SLinkedList basic operations", "[SLinkedList]") {
     REQUIRE(firstNode.has_value());
     REQUIRE(lastNode.has_value());
 
-    REQUIRE(firstNode.value()->getData() == 1);
-    REQUIRE(lastNode.value()->getData() == 2);
+    REQUIRE(firstNode.value()->getDataCopy() == 1);
+    REQUIRE(lastNode.value()->getDataCopy() == 2);
   }
 
   SECTION("Remove elements") {
-    list.insertFirst(1);
-    list.insertLast(2);
+    auto firstNode_ptr = list.insertFirst(1);
+    auto lastNode_ptr = list.insertLast(2);
 
     auto removed1 = list.remove(1);
     auto removed2 = list.remove(2);
