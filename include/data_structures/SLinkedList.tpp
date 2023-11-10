@@ -19,7 +19,7 @@ namespace data_structures {
 
 // Copy constructor
 template <typename T>
-SNode<T>::SNode(const SNode &other) : element{other.element}, next{nullptr} {
+SNode<T>::SNode(const SNode &other) : data{other.data}, next{nullptr} {
   std::cout << "SNode: Copy ctor" << std::endl;
   if (other.next) {
     next = std::make_unique<SNode<T>>(*other.next);
@@ -29,7 +29,7 @@ SNode<T>::SNode(const SNode &other) : element{other.element}, next{nullptr} {
 // Move constructor
 template <typename T>
 SNode<T>::SNode(SNode &&other) noexcept
-    : element(std::move(other.element)), next(std::move(other.next)) {
+    : data(std::move(other.data)), next(std::move(other.next)) {
   std::cout << "SNode: Move ctor" << std::endl;
   other.next.reset();
 }
@@ -38,7 +38,7 @@ SNode<T>::SNode(SNode &&other) noexcept
 template <typename T> auto SNode<T>::operator=(const SNode &other) -> SNode & {
   std::cout << "SNode: Copy assignment" << std::endl;
   if (this != &other) {
-    element = other.element;
+    data = other.data;
     if (other.next) {
       next = std::make_unique<SNode>(*other.next);
     } else {
@@ -54,33 +54,35 @@ auto SNode<T>::operator=(SNode &&other) noexcept -> SNode & {
   std::cout << "SNode: Move assignment" << std::endl;
 
   if (this != &other) {
-    element = std::move(other.element);
+    data = std::move(other.data);
     next = std::move(other.next);
   }
   return *this;
 }
 
 // ------ getters ------
-template <typename T> auto SNode<T>::getElement() const -> const T & {
-  return element;
+template <typename T> auto SNode<T>::getData() const -> const T & {
+  return data;
+}
+
+template <typename T> auto SNode<T>::getDataCopy() const -> T { return data; }
+
+template <typename T> auto SNode<T>::getNext() const -> SNode<T> * {
+  return next.get();
 }
 
 template <typename T>
-auto SNode<T>::getNext() const -> std::optional<SNode<T> *> {
-  if (next != nullptr) {
-    return std::optional<SNode<T> *>(next.get());
-  } else {
-    return std::nullopt;
-  }
+[[nodiscard]] auto SNode<T>::ownNext() -> std::unique_ptr<SNode<T>> {
+  return std::unique_ptr<SNode<T>>(next.release());
 }
 
 // ------ setters ------
-template <typename T> auto SNode<T>::setElement(T elm) -> void {
+template <typename T> auto SNode<T>::setData(T data) -> void {
   if constexpr (std::is_trivially_copyable_v<T>) {
-    element = elm; // Regular assignment for trivially copyable types.
+    this->data = data; // Regular assignment for trivially copyable types.
   } else {
-    element = std::move(elm); // Move semantics for non-trivially
-    // copyable elements
+    data = std::move(data); // Move semantics for non-trivially
+    // copyable datas
   }
 }
 
@@ -100,14 +102,17 @@ SLinkedList<T>::SLinkedList() : length{0}, head{nullptr}, tail{nullptr} {
 }
 
 // Copy ctor
-template <typename T> SLinkedList<T>::SLinkedList(const SLinkedList &other) {
+template <typename T>
+SLinkedList<T>::SLinkedList(const SLinkedList &other)
+    : length(0), head(nullptr), tail(nullptr) {
   std::cout << "SLinkedList: Copy Ctor" << std::endl;
 
-  SNode<T> *current = other.head.get();
+  // Create a deep copy of the other linked list
+  auto current = other.head.get();
+
   while (current) {
-    insertLast(current->getElement());
-    auto opt_next = current->getNext();
-    current = opt_next.has_value() ? opt_next.value() : nullptr;
+    insertLast(current->getData());
+    current = current->getNext();
   }
 }
 
@@ -134,7 +139,7 @@ auto SLinkedList<T>::operator=(const SLinkedList &other) -> SLinkedList & {
 
     SNode<T> *current = other.head.get();
     while (current) {
-      insertLast(current->getElement());
+      insertLast(current->getData());
       current = current->getNext();
     }
   }
@@ -174,21 +179,25 @@ template <typename T> SLinkedList<T>::~SLinkedList() {
 // ------ Accessors ------
 
 template <typename T> auto SLinkedList<T>::getLength() const -> size_t {
+  std::cout << "SLinkedList: getLength()" << std::endl;
   return length;
 }
 
 template <typename T> auto SLinkedList<T>::isEmpty() const -> bool {
+  std::cout << "SLinkedList: isEmpty()" << std::endl;
   return (length < 1);
 }
 
 template <typename T>
 auto SLinkedList<T>::isFirst(const SNode<T> &node) const -> bool {
+  std::cout << "SLinkedList: isFirst()" << std::endl;
   return (&node == head.get());
 }
 
 template <typename T>
 auto SLinkedList<T>::isLast(const SNode<T> &node) const -> bool {
-  return (&node == tail.get());
+  std::cout << "SLinkedList: isLast()" << std::endl;
+  return (&node == tail);
 }
 
 template <typename T>
@@ -197,7 +206,17 @@ auto SLinkedList<T>::first() const -> std::optional<SNode<T> *> {
   if (isEmpty()) {
     return std::nullopt;
   } else {
-    return std::optional<SNode<T> *>(head.get());
+    return std::optional(head.get());
+  }
+}
+
+template <typename T>
+auto SLinkedList<T>::firstCopy() const -> std::optional<SNode<T>> {
+  std::cout << "SLinkedList: firstCopy()" << std::endl;
+  if (isEmpty()) {
+    return std::nullopt;
+  } else {
+    return std::optional(*head);
   }
 }
 
@@ -207,54 +226,77 @@ auto SLinkedList<T>::last() const -> std::optional<SNode<T> *> {
   if (isEmpty()) {
     return std::nullopt;
   } else {
-    return std::optional<SNode<T> *>(tail.get());
+    return std::optional<SNode<T> *>(tail);
   }
 }
 
 template <typename T>
-auto SLinkedList<T>::getElementAt(size_t index) -> std::optional<T> {
-  std::cout << "SLinkedList: getElementAt()" << std::endl;
-  if (index < 0 || index >= length) {
+auto SLinkedList<T>::lastCopy() const -> std::optional<SNode<T>> {
+  std::cout << "SLinkedList: lastCopy()" << std::endl;
+  if (isEmpty()) {
+    return std::nullopt;
+  } else {
+    return std::optional<SNode<T>>(*tail);
+  }
+}
+
+template <typename T>
+auto SLinkedList<T>::getDataAt(size_t index) -> std::optional<T> {
+  std::cout << "SLinkedList: getDataAt()" << std::endl;
+  if (index >= length) {
     return std::nullopt;
   }
 
   SNode<T> *current = head.get();
   for (size_t i = 0; i < index; ++i) {
-    auto opt_next = current->getNext();
-    current = opt_next.has_value() ? opt_next.value() : nullptr;
+    current = current->getNext();
   }
-  // Return the element at the specified index
-  return std::optional<T>(current->getElement());
+  // Return the data at the specified index
+  return std::optional<T>(current->getDataCopy());
 }
 
 template <typename T>
-auto SLinkedList<T>::find(const T &element) const -> std::optional<SNode<T> *> {
+auto SLinkedList<T>::find(const T &data) const -> std::optional<SNode<T> *> {
+  std::cout << "SLinkedList: find()" << std::endl;
   SNode<T> *current = head.get();
+
   while (current) {
-    std::cout << "SLinkedList: find(), current elm = " << current->getElement()
-              << std::endl;
-    if (current->getElement() == element) {
+    if (current->getData() == data) {
       return std::optional<SNode<T> *>(current);
     }
-    auto opt_next = current->getNext();
-    current = opt_next.has_value() ? opt_next.value() : nullptr;
+    current = current->getNext();
   }
-  return std::nullopt; // Return empty std::optional if the element is not found
+
+  return std::nullopt;
 }
 
 template <typename T>
-auto SLinkedList<T>::findAll(const T &element) const
+auto SLinkedList<T>::findCopy(const T &data) const -> std::optional<SNode<T>> {
+  std::cout << "SLinkedList: findCopy()" << std::endl;
+  SNode<T> *current = head.get();
+
+  while (current) {
+    if (current->getData() == data) {
+      return std::optional<SNode<T>>(*current);
+    }
+    current = current->getNext();
+  }
+
+  return std::nullopt;
+}
+
+template <typename T>
+auto SLinkedList<T>::findAll(const T &data) const
     -> std::optional<std::vector<SNode<T> *>> {
   std::cout << "SLinkedList: findAll()" << std::endl;
   std::vector<SNode<T> *> found_nodes;
   SNode<T> *current = head.get();
 
   while (current) {
-    if (current->getElement() == element) {
+    if (current->getData() == data) {
       found_nodes.push_back(current);
     }
-    auto opt_next = current->getNext();
-    current = opt_next.has_value() ? opt_next.value() : nullptr;
+    current = current->getNext();
   }
 
   if (found_nodes.empty()) {
@@ -264,76 +306,235 @@ auto SLinkedList<T>::findAll(const T &element) const
   }
 }
 
+template <typename T>
+auto SLinkedList<T>::findAllCopy(const T &data) const
+    -> std::optional<std::vector<SNode<T>>> {
+  std::cout << "SLinkedList: findAllCopy()" << std::endl;
+  std::vector<SNode<T>> found_nodes;
+  SNode<T> *current = head.get();
+
+  while (current) {
+    if (current->getData() == data) {
+      found_nodes.push_back(*current);
+    }
+    current = current->getNext();
+  }
+
+  if (found_nodes.empty()) {
+    return std::nullopt;
+  } else {
+    return std::optional<std::vector<SNode<T>>>(found_nodes);
+  }
+}
+
 // ------ Modifiers ------
 
 template <typename T>
-auto SLinkedList<T>::insertFirst(const T &elm) -> SNode<T> * {
+auto SLinkedList<T>::insertFirst(const T &data) -> SNode<T> * {
   std::cout << "SLinkedList: insertFirst()" << std::endl;
   // Create a new node
-  auto new_node = std::make_unique<SNode<T>>(elm);
+  auto new_node = std::make_unique<SNode<T>>(data);
+
   if (isEmpty()) {
+    // If the list is empty, set the new_node as both the head and tail
     head = std::move(new_node);
+    tail = head.get();
   } else {
-    // If the list is not empty, the new_node will become our head,
-    // therefore, its nextNode == current head
+    // If the list is not empty, the new_node will become our head
+    // Set its nextNode to the current head
     new_node->setNext(std::move(head));
     head = std::move(new_node);
   }
 
-  // Increment the length of the list, since we inserted a new node
+  // Increment the length of the list since we inserted a new node
   length++;
 
-  // Return a copy of the newly inserted node(new_node is moved into head)
+  // Return a raw pointer to the newly inserted node (the head)
   return head.get();
 }
 
 template <typename T>
-auto SLinkedList<T>::insertAfter(SNode<T> *node, const T &elm)
-    -> std::optional<SNode<T> *> {
-  std::cout << "SLinkedList: insertAfter()" << std::endl;
+auto SLinkedList<T>::insertLast(const T &data) -> SNode<T> * {
+  // Create a new node
+  auto new_node = std::make_unique<SNode<T>>(data);
+
   if (isEmpty()) {
-    return std::nullopt;
+    // If the list is empty, set the new_node as both the head and tail
+    head = std::move(new_node);
+    tail = head.get();
+  } else {
+    // If the list is not empty, insert the new_node at the end
+    tail->setNext(std::move(new_node));
+    tail = tail->getNext();
   }
-  // Create new node
-  auto new_node = std::make_unique<SNode<T>>(elm);
-  auto opt_next = node->getNext();
-  auto next = opt_next.has_value() ? opt_next.value() : nullptr;
-  // Increment the length of the list, since we inserted a new node
+
+  // Increment the length of the list since we inserted a new node
   length++;
 
-  if (next == nullptr) { // this means we insert at the end
-    tail = std::move(new_node);
-    node->setNext(std::move(tail));
-
-    return (node->getNext());
-  }
-
-  new_node->setNext(std::make_unique<SNode<T>>(*next));
-  node->setNext(std::move(new_node));
-
-  return node->getNext();
+  // Return a raw pointer to the newly inserted node (the tail)
+  return tail;
 }
 
-// TODO:  [[nodiscard]] auto removeAfter(SNode<T> &node) -> std::optional<T>;
-// TODO:  [[nodiscard]] auto remove(SNode<T> *node) -> std::optional<T>;
+template <typename T>
+auto SLinkedList<T>::insertAfter(SNode<T> *node, const T &data)
+    -> std::optional<SNode<T> *> {
+  if (!node || isEmpty()) {
+    return std::nullopt; // Cannot insert if list isEmpty or node is nullptr
+  }
+
+  // Create a new node
+  auto new_node = std::make_unique<SNode<T>>(data);
+  SNode<T> *next = node->getNext();
+
+  // Increment the length of the list since we inserted a new node
+  length++;
+
+  if (!next) { // Insert at the end
+    node->setNext(std::move(new_node));
+    tail = node->getNext();
+  } else {
+    new_node->setNext(std::move(node->ownNext()));
+    node->setNext(std::move(new_node));
+  }
+
+  // Return a raw pointer to the newly inserted node
+  return std::optional<SNode<T> *>(node->getNext());
+}
+
+template <typename T>
+auto SLinkedList<T>::insertAt(size_t index, const T &data) -> std::optional<T> {
+  if (index >= length) {
+    return std::nullopt;
+  }
+
+  if (index == 0) {
+    insertFirst(data);
+    return std::make_optional(data);
+  } else {
+    auto new_node = std::make_unique<SNode<T>>(data);
+    SNode<T> *current = head.get();
+    SNode<T> *prev = nullptr;
+
+    for (size_t i = 0; i < index; ++i) {
+      prev = current;
+      current = current->getNext();
+    }
+    new_node->setNext(std::move(prev->ownNext()));
+    prev->setNext(std::move(new_node));
+    length++;
+    return std::make_optional(new_node->getData());
+  }
+}
+
+template <typename T>
+auto SLinkedList<T>::removeAfter(SNode<T> *node) -> std::optional<T> {
+  if (node == nullptr) {
+    return std::nullopt; // Invalid node
+  }
+
+  auto node_to_del = std::move(node->ownNext());
+
+  if (!node_to_del) {
+    return std::nullopt; // Nothing to remove
+  }
+
+  node->setNext(std::move(node_to_del->ownNext()));
+
+  length--;
+
+  return std::make_optional(node_to_del->getDataCopy());
+}
+
+template <typename T>
+auto SLinkedList<T>::remove(const T &data) -> std::optional<T> {
+  auto removed_data = std::optional<T>(std::nullopt);
+
+  if (!head) {
+    return removed_data; // List is empty, return nullopt
+  }
+
+  if (head->getDataCopy() == data) {
+    removed_data = std::make_optional(head->getDataCopy());
+    head = std::move(head->ownNext());
+    length--;
+    return removed_data;
+  }
+
+  SNode<T> *current = head.get();
+  SNode<T> *prev = nullptr;
+
+  while (current && current->getDataCopy() != data) {
+    prev = current;
+    current = current->getNext();
+  }
+
+  if (current) {
+    removed_data = std::make_optional(current->getDataCopy());
+    prev->setNext(current->ownNext());
+    length--;
+  }
+
+  return removed_data;
+}
+
+template <typename T>
+auto SLinkedList<T>::removeAt(size_t index) -> std::optional<T> {
+  if (index >= length) {
+    return std::nullopt; // Index is out of bounds
+  }
+
+  auto removed_data = std::optional<T>(std::nullopt);
+
+  if (!head) {
+    return removed_data; // List is empty, return nullopt
+  }
+
+  if (index == 0) {
+    removed_data = std::make_optional(head->getDataCopy());
+    head = std::move(head->ownNext());
+    length--;
+    return removed_data;
+  }
+
+  SNode<T> *current = head.get();
+  SNode<T> *prev = nullptr;
+
+  for (size_t i = 0; i < index; i++) {
+    prev = current;
+    current = current->getNext();
+  }
+
+  if (current) {
+    removed_data = std::make_optional(current->getDataCopy());
+    prev->setNext(current->ownNext());
+    length--;
+  }
+
+  return removed_data;
+}
 
 template <typename T> auto SLinkedList<T>::clear() -> void {
   std::cout << "SLinkedList: clear()" << std::endl;
+  while (head) {
+    head = std::move(head->ownNext());
+  }
   length = 0;
-  head.reset();
-  tail.reset();
+  tail = nullptr;
 }
 
 template <typename T> auto SLinkedList<T>::printAll() -> void {
   SNode<T> *current = head.get();
-  std::cout << "\n\nSLinkedList: printAll()\n";
+  std::cout << "SLinkedList: printAll()" << std::endl;
+
   while (current) {
-    std::cout << "(" << current->getElement() << ")"
-              << "-->";
-    auto opt_next = current->getNext();
-    current = opt_next.has_value() ? opt_next.value() : nullptr;
+    std::cout << current->getData();
+    current = current->getNext();
+    if (current) {
+      std::cout << " --> ";
+    }
   }
-  std::cout << "(x)" << std::endl;
+
+  std::cout << " (x)" << std::endl;
 }
 
 } // namespace data_structures

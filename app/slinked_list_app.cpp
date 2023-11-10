@@ -1,5 +1,6 @@
 
 #include "SLinkedList.hpp"
+#include <cassert>
 #include <cstddef>
 #include <cstring>
 #include <iostream>
@@ -7,24 +8,40 @@
 #include <string>
 
 int main() {
-  data_structures::SLinkedList<float> floatSList;
-  auto node1 = floatSList.insertFirst(0.1f);
-  auto node2 = floatSList.insertFirst(0.2f);
-  auto node4 = floatSList.insertAfter(node2, 0.4f);
+  data_structures::SLinkedList<float> slist;
+  auto inserted_node = slist.insertLast(5);
+  inserted_node = slist.insertLast(7);
+  inserted_node = slist.insertLast(9);
 
-  std::cout << "node4 = " << (node4.has_value() ? node4.value() : nullptr)
-            << std::endl;
+  auto data = slist.getDataAt(2).value_or(-1);
+  std::cout << data << std::endl;
+  assert(data == 9);
 
-  auto first_node = floatSList.first();
-  if (first_node.has_value()) {
-    std::cout << "first = " << first_node.value()->getElement() << std::endl;
-  }
-  auto node_with_val = floatSList.find(0.1f);
-  if (node_with_val.has_value()) {
-    std::cout << node_with_val.value()->getElement() << std::endl;
-  }
+  auto removed_data = slist.removeAt(1).value_or(-1.0f);
+  std::cout << removed_data << std::endl;
+  assert(removed_data == 7);
+  assert(slist.getLength() == 2);
 
-  floatSList.printAll();
+  auto last_node_ptr = slist.insertLast(11);
+  removed_data = slist.removeAt(1).value_or(-1.0f);
+  assert(removed_data == 9);
+  assert(!slist.remove(9).has_value());
+  removed_data = slist.removeAt(0).value_or(-1.0f);
+  assert(removed_data == 5);
+  removed_data = slist.removeAt(0).value_or(-1.0f);
+  assert(removed_data == 11);
+  assert(slist.getLength() == 0);
+
+  auto first_node_ptr = slist.insertFirst(5);
+  first_node_ptr = slist.insertFirst(7);
+  first_node_ptr = slist.insertFirst(9);
+
+  data = slist.getDataAt(2).value_or(-1.0f);
+  assert(data == 5);
+  assert(slist.getDataAt(0).value_or(-1.0f) == 9);
+  assert(slist.remove(9).value_or(-1.0f) == 9);
+  assert(slist.getLength() == 2);
+  assert(slist.getDataAt(0).value_or(-1.0f) == 7);
 
   return 0;
 }
