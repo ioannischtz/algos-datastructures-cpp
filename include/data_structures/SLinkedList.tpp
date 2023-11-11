@@ -82,7 +82,7 @@ template <typename T> auto SNode<T>::setData(T data) -> void {
     this->data = data; // Regular assignment for trivially copyable types.
   } else {
     data = std::move(data); // Move semantics for non-trivially
-    // copyable datas
+    // copyable data
   }
 }
 

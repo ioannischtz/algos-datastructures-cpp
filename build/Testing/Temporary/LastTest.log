@@ -1,10 +1,29 @@
-Start testing: Nov 09 15:43 EET
+Start testing: Nov 11 14:02 EET
 ----------------------------------------------------------
-1/1 Testing: SLinkedList basic operations
-1/1 Test: SLinkedList basic operations
+1/3 Testing: add_one
+1/3 Test: add_one
+Command: "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests" "add_one"
+Directory: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests
+"add_one" start time: Nov 11 14:02 EET
+Output:
+----------------------------------------------------------
+Filters: add_one
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"add_one" end time: Nov 11 14:02 EET
+"add_one" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: SLinkedList basic operations
+2/3 Test: SLinkedList basic operations
 Command: "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests" "SLinkedList basic operations"
 Directory: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests
-"SLinkedList basic operations" start time: Nov 09 15:43 EET
+"SLinkedList basic operations" start time: Nov 11 14:02 EET
 Output:
 ----------------------------------------------------------
 Filters: SLinkedList basic operations
@@ -48,8 +67,27 @@ All tests passed (14 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"SLinkedList basic operations" end time: Nov 09 15:43 EET
+"SLinkedList basic operations" end time: Nov 11 14:02 EET
 "SLinkedList basic operations" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 09 15:43 EET
+3/3 Testing: Queue basic operations
+3/3 Test: Queue basic operations
+Command: "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests" "Queue basic operations"
+Directory: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests
+"Queue basic operations" start time: Nov 11 14:02 EET
+Output:
+----------------------------------------------------------
+Filters: Queue basic operations
+===============================================================================
+All tests passed (10 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Queue basic operations" end time: Nov 11 14:02 EET
+"Queue basic operations" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 11 14:02 EET
