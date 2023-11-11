@@ -8,3 +8,7 @@ add_executable(slinked_list_app slinked_list_app.cpp)
 target_include_directories(slinked_list_app PUBLIC
   ../include/data_structures)
 
+# add_executable(slinked_list_app slinked_list_app.cpp)
+# target_include_directories(slinked_list_app PUBLIC
+#   ../include/data_structures)
+

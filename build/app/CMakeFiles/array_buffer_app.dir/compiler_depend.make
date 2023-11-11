@@ -26,7 +26,9 @@ app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o: /home/ion-hz/Develop
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -284,8 +286,6 @@ app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o: /home/ion-hz/Develop
 
 /usr/include/c++/13.2.1/cstdlib:
 
-/usr/include/bits/types/timer_t.h:
-
 /usr/include/bits/types/time_t.h:
 
 /usr/include/bits/types/struct_timeval.h:
@@ -305,10 +305,6 @@ app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o: /home/ion-hz/Develop
 /usr/include/bits/waitflags.h:
 
 /usr/include/bits/types/struct_FILE.h:
-
-/usr/include/bits/types/wint_t.h:
-
-/usr/include/c++/13.2.1/bits/stl_pair.h:
 
 /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/include/data_structures/ArrayBuffer.tpp:
 
@@ -346,6 +342,10 @@ app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o: /home/ion-hz/Develop
 
 /usr/include/bits/stdint-intn.h:
 
+/usr/include/c++/13.2.1/clocale:
+
+/usr/include/bits/endian.h:
+
 /usr/include/asm/errno.h:
 
 /usr/include/bits/thread-shared-types.h:
@@ -357,6 +357,12 @@ app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o: /home/ion-hz/Develop
 /usr/include/c++/13.2.1/tuple:
 
 /usr/include/bits/endianness.h:
+
+/usr/include/c++/13.2.1/ext/alloc_traits.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/bits/uintn-identity.h:
 
 /usr/include/bits/long-double.h:
 
@@ -392,8 +398,6 @@ app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o: /home/ion-hz/Develop
 
 /usr/include/bits/time64.h:
 
-/usr/include/c++/13.2.1/bits/functexcept.h:
-
 /usr/include/bits/stdio_lim.h:
 
 /usr/include/bits/types/__mbstate_t.h:
@@ -409,8 +413,6 @@ app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o: /home/ion-hz/Develop
 /usr/include/bits/libc-header-start.h:
 
 /usr/include/bits/types/mbstate_t.h:
-
-/usr/include/bits/types/sigset_t.h:
 
 /usr/include/bits/floatn.h:
 
@@ -436,11 +438,21 @@ app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o: /home/ion-hz/Develop
 
 /usr/include/c++/13.2.1/bits/range_access.h:
 
-/usr/include/bits/uintn-identity.h:
+/usr/include/c++/13.2.1/bits/functexcept.h:
 
-/usr/include/c++/13.2.1/ext/alloc_traits.h:
+/usr/include/bits/stdio.h:
 
-/usr/include/bits/struct_mutex.h:
+/usr/include/c++/13.2.1/bits/requires_hosted.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/bits/types/wint_t.h:
+
+/usr/include/c++/13.2.1/bits/stl_pair.h:
 
 /usr/include/c++/13.2.1/backward/binders.h:
 
@@ -536,8 +548,6 @@ app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o: /home/ion-hz/Develop
 
 /usr/include/c++/13.2.1/bits/predefined_ops.h:
 
-/usr/include/c++/13.2.1/bits/requires_hosted.h:
-
 /usr/include/c++/13.2.1/cstring:
 
 /usr/include/bits/typesizes.h:
@@ -577,7 +587,3 @@ app/CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o: /home/ion-hz/Develop
 /usr/include/c++/13.2.1/bits/uses_allocator_args.h:
 
 /usr/include/c++/13.2.1/cctype:
-
-/usr/include/bits/endian.h:
-
-/usr/include/c++/13.2.1/clocale:

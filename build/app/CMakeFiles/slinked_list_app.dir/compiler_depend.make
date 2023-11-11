@@ -28,7 +28,9 @@ app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o: /home/ion-hz/Develop
   /usr/include/bits/setjmp.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -338,7 +340,9 @@ app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o: /home/ion-hz/Develop
 
 /usr/include/c++/13.2.1/bits/stl_pair.h:
 
-/usr/include/bits/types/time_t.h:
+/usr/include/c++/13.2.1/bits/stl_heap.h:
+
+/usr/include/c++/13.2.1/bits/stl_function.h:
 
 /usr/include/bits/types/struct_timeval.h:
 
@@ -363,8 +367,6 @@ app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o: /home/ion-hz/Develop
 /usr/include/bits/types/struct_FILE.h:
 
 /usr/include/c++/13.2.1/bits/exception_defines.h:
-
-/usr/include/c++/13.2.1/bits/stl_function.h:
 
 /usr/include/c++/13.2.1/debug/debug.h:
 
@@ -420,6 +422,16 @@ app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o: /home/ion-hz/Develop
 
 /usr/include/c++/13.2.1/bits/new_allocator.h:
 
+/usr/include/bits/types/time_t.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/include/data_structures/SLinkedList.hpp:
+
+/usr/include/bits/stdlib-bsearch.h:
+
 /usr/include/c++/13.2.1/ext/alloc_traits.h:
 
 /usr/include/bits/struct_mutex.h:
@@ -429,8 +441,6 @@ app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o: /home/ion-hz/Develop
 /usr/include/bits/stdlib-float.h:
 
 /usr/include/bits/time64.h:
-
-/usr/include/c++/13.2.1/bits/functexcept.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -486,12 +496,6 @@ app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o: /home/ion-hz/Develop
 
 /usr/include/bits/types/mbstate_t.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/include/data_structures/SLinkedList.hpp:
-
 /usr/include/features.h:
 
 /usr/include/c++/13.2.1/tuple:
@@ -539,6 +543,12 @@ app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o: /home/ion-hz/Develop
 /usr/include/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/13.2.1/bits/range_access.h:
+
+/usr/include/c++/13.2.1/bits/functexcept.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/c++/13.2.1/bits/requires_hosted.h:
 
 /usr/include/bits/types/timer_t.h:
 
@@ -660,8 +670,6 @@ app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o: /home/ion-hz/Develop
 
 /usr/include/c++/13.2.1/bits/predefined_ops.h:
 
-/usr/include/c++/13.2.1/bits/requires_hosted.h:
-
 /usr/include/bits/long-double.h:
 
 /usr/include/c++/13.2.1/bits/shared_ptr.h:
@@ -681,5 +689,3 @@ app/CMakeFiles/slinked_list_app.dir/slinked_list_app.cpp.o: /home/ion-hz/Develop
 /usr/include/c++/13.2.1/bits/stl_vector.h:
 
 /usr/include/c++/13.2.1/bits/stl_construct.h:
-
-/usr/include/c++/13.2.1/bits/stl_heap.h:

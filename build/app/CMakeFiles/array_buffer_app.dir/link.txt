@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o -o array_buffer_app 
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/array_buffer_app.dir/array_buffer_app.cpp.o -o array_buffer_app 

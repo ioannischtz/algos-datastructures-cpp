@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "../app/tests"
   "../app/tests.pdb"
+  "CMakeFiles/tests.dir/adder_t.cpp.o"
+  "CMakeFiles/tests.dir/adder_t.cpp.o.d"
+  "CMakeFiles/tests.dir/queue_t.cpp.o"
+  "CMakeFiles/tests.dir/queue_t.cpp.o.d"
   "CMakeFiles/tests.dir/slinked_list_t.cpp.o"
   "CMakeFiles/tests.dir/slinked_list_t.cpp.o.d"
   "CMakeFiles/tests.dir/tests.cpp.o"

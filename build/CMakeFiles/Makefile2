@@ -913,15 +913,15 @@ src/CMakeFiles/adder.dir/clean:
 # Target rules for target tests/CMakeFiles/tests.dir
 
 # All Build rule for target.
-tests/CMakeFiles/tests.dir/all:
+tests/CMakeFiles/tests.dir/all: src/CMakeFiles/adder.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=7,8,9 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=7,8,9,10,11 "Built target tests"
 .PHONY : tests/CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/tests.dir/rule
