@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/queue_t.cpp.o.d"
   "CMakeFiles/tests.dir/slinked_list_t.cpp.o"
   "CMakeFiles/tests.dir/slinked_list_t.cpp.o.d"
+  "CMakeFiles/tests.dir/stack_t.cpp.o"
+  "CMakeFiles/tests.dir/stack_t.cpp.o.d"
   "CMakeFiles/tests.dir/tests.cpp.o"
   "CMakeFiles/tests.dir/tests.cpp.o.d"
   "tests_tests-b12d07c.cmake"
