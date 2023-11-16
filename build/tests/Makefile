@@ -212,6 +212,30 @@ slinked_list_t.cpp.s:
 	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/slinked_list_t.cpp.s
 .PHONY : slinked_list_t.cpp.s
 
+stack_t.o: stack_t.cpp.o
+.PHONY : stack_t.o
+
+# target to build an object file
+stack_t.cpp.o:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/stack_t.cpp.o
+.PHONY : stack_t.cpp.o
+
+stack_t.i: stack_t.cpp.i
+.PHONY : stack_t.i
+
+# target to preprocess a source file
+stack_t.cpp.i:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/stack_t.cpp.i
+.PHONY : stack_t.cpp.i
+
+stack_t.s: stack_t.cpp.s
+.PHONY : stack_t.s
+
+# target to generate assembly for a file
+stack_t.cpp.s:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/stack_t.cpp.s
+.PHONY : stack_t.cpp.s
+
 tests.o: tests.cpp.o
 .PHONY : tests.o
 
@@ -255,6 +279,9 @@ help:
 	@echo "... slinked_list_t.o"
 	@echo "... slinked_list_t.i"
 	@echo "... slinked_list_t.s"
+	@echo "... stack_t.o"
+	@echo "... stack_t.i"
+	@echo "... stack_t.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"

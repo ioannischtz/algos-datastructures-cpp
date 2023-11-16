@@ -1,4 +1,4 @@
-add_one 6 0.000521032
+add_one 7 0.000444593
 SLinkedList 0 0
 Queue 0 0
 SLinkedList 0 0
@@ -9,6 +9,9 @@ SLinkedList 0 0
 Queue 0 0
 SLinkedList 0 0
 Queue 0 0
-SLinkedList basic operations 1 0.00380703
-Queue basic operations 1 0.00492467
+SLinkedList 0 0
+Queue 0 0
+SLinkedList basic operations 1 0.00321413
+Queue basic operations 1 0.00319393
+Stack badic operations 1 0.00641378
 ---

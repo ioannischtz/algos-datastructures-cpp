@@ -4,4 +4,6 @@ add_test( [==[SLinkedList basic operations]==] /home/ion-hz/Develop/cpp/tutorial
 set_tests_properties( [==[SLinkedList basic operations]==] PROPERTIES WORKING_DIRECTORY /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests)
 add_test( [==[Queue basic operations]==] /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests [==[Queue basic operations]==]  )
 set_tests_properties( [==[Queue basic operations]==] PROPERTIES WORKING_DIRECTORY /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests)
-set( tests_TESTS add_one [==[SLinkedList basic operations]==] [==[Queue basic operations]==])
+add_test( [==[Stack badic operations]==] /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests [==[Stack badic operations]==]  )
+set_tests_properties( [==[Stack badic operations]==] PROPERTIES WORKING_DIRECTORY /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests)
+set( tests_TESTS add_one [==[SLinkedList basic operations]==] [==[Queue basic operations]==] [==[Stack badic operations]==])
