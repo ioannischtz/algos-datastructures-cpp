@@ -140,101 +140,29 @@ tests/fast:
 	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
-adder_t.o: adder_t.cpp.o
-.PHONY : adder_t.o
+ring_buff_t.o: ring_buff_t.cpp.o
+.PHONY : ring_buff_t.o
 
 # target to build an object file
-adder_t.cpp.o:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/adder_t.cpp.o
-.PHONY : adder_t.cpp.o
+ring_buff_t.cpp.o:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/ring_buff_t.cpp.o
+.PHONY : ring_buff_t.cpp.o
 
-adder_t.i: adder_t.cpp.i
-.PHONY : adder_t.i
-
-# target to preprocess a source file
-adder_t.cpp.i:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/adder_t.cpp.i
-.PHONY : adder_t.cpp.i
-
-adder_t.s: adder_t.cpp.s
-.PHONY : adder_t.s
-
-# target to generate assembly for a file
-adder_t.cpp.s:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/adder_t.cpp.s
-.PHONY : adder_t.cpp.s
-
-queue_t.o: queue_t.cpp.o
-.PHONY : queue_t.o
-
-# target to build an object file
-queue_t.cpp.o:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/queue_t.cpp.o
-.PHONY : queue_t.cpp.o
-
-queue_t.i: queue_t.cpp.i
-.PHONY : queue_t.i
+ring_buff_t.i: ring_buff_t.cpp.i
+.PHONY : ring_buff_t.i
 
 # target to preprocess a source file
-queue_t.cpp.i:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/queue_t.cpp.i
-.PHONY : queue_t.cpp.i
+ring_buff_t.cpp.i:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/ring_buff_t.cpp.i
+.PHONY : ring_buff_t.cpp.i
 
-queue_t.s: queue_t.cpp.s
-.PHONY : queue_t.s
-
-# target to generate assembly for a file
-queue_t.cpp.s:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/queue_t.cpp.s
-.PHONY : queue_t.cpp.s
-
-slinked_list_t.o: slinked_list_t.cpp.o
-.PHONY : slinked_list_t.o
-
-# target to build an object file
-slinked_list_t.cpp.o:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/slinked_list_t.cpp.o
-.PHONY : slinked_list_t.cpp.o
-
-slinked_list_t.i: slinked_list_t.cpp.i
-.PHONY : slinked_list_t.i
-
-# target to preprocess a source file
-slinked_list_t.cpp.i:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/slinked_list_t.cpp.i
-.PHONY : slinked_list_t.cpp.i
-
-slinked_list_t.s: slinked_list_t.cpp.s
-.PHONY : slinked_list_t.s
+ring_buff_t.s: ring_buff_t.cpp.s
+.PHONY : ring_buff_t.s
 
 # target to generate assembly for a file
-slinked_list_t.cpp.s:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/slinked_list_t.cpp.s
-.PHONY : slinked_list_t.cpp.s
-
-stack_t.o: stack_t.cpp.o
-.PHONY : stack_t.o
-
-# target to build an object file
-stack_t.cpp.o:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/stack_t.cpp.o
-.PHONY : stack_t.cpp.o
-
-stack_t.i: stack_t.cpp.i
-.PHONY : stack_t.i
-
-# target to preprocess a source file
-stack_t.cpp.i:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/stack_t.cpp.i
-.PHONY : stack_t.cpp.i
-
-stack_t.s: stack_t.cpp.s
-.PHONY : stack_t.s
-
-# target to generate assembly for a file
-stack_t.cpp.s:
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/stack_t.cpp.s
-.PHONY : stack_t.cpp.s
+ring_buff_t.cpp.s:
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tests.dir/build.make tests/CMakeFiles/tests.dir/ring_buff_t.cpp.s
+.PHONY : ring_buff_t.cpp.s
 
 tests.o: tests.cpp.o
 .PHONY : tests.o
@@ -270,18 +198,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... tests"
-	@echo "... adder_t.o"
-	@echo "... adder_t.i"
-	@echo "... adder_t.s"
-	@echo "... queue_t.o"
-	@echo "... queue_t.i"
-	@echo "... queue_t.s"
-	@echo "... slinked_list_t.o"
-	@echo "... slinked_list_t.i"
-	@echo "... slinked_list_t.s"
-	@echo "... stack_t.o"
-	@echo "... stack_t.i"
-	@echo "... stack_t.s"
+	@echo "... ring_buff_t.o"
+	@echo "... ring_buff_t.i"
+	@echo "... ring_buff_t.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"

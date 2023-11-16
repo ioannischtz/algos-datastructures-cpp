@@ -8,10 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/adder_t.cpp" "tests/CMakeFiles/tests.dir/adder_t.cpp.o" "gcc" "tests/CMakeFiles/tests.dir/adder_t.cpp.o.d"
-  "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/queue_t.cpp" "tests/CMakeFiles/tests.dir/queue_t.cpp.o" "gcc" "tests/CMakeFiles/tests.dir/queue_t.cpp.o.d"
-  "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/slinked_list_t.cpp" "tests/CMakeFiles/tests.dir/slinked_list_t.cpp.o" "gcc" "tests/CMakeFiles/tests.dir/slinked_list_t.cpp.o.d"
-  "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/stack_t.cpp" "tests/CMakeFiles/tests.dir/stack_t.cpp.o" "gcc" "tests/CMakeFiles/tests.dir/stack_t.cpp.o.d"
+  "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/ring_buff_t.cpp" "tests/CMakeFiles/tests.dir/ring_buff_t.cpp.o" "gcc" "tests/CMakeFiles/tests.dir/ring_buff_t.cpp.o.d"
   "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/tests.cpp" "tests/CMakeFiles/tests.dir/tests.cpp.o" "gcc" "tests/CMakeFiles/tests.dir/tests.cpp.o.d"
   )
 

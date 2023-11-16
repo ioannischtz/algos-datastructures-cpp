@@ -83,82 +83,34 @@ tests/CMakeFiles/tests.dir/tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests.cpp.s"
 	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/tests.cpp -o CMakeFiles/tests.dir/tests.cpp.s
 
-tests/CMakeFiles/tests.dir/adder_t.cpp.o: tests/CMakeFiles/tests.dir/flags.make
-tests/CMakeFiles/tests.dir/adder_t.cpp.o: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/adder_t.cpp
-tests/CMakeFiles/tests.dir/adder_t.cpp.o: tests/CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/tests.dir/adder_t.cpp.o"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/tests.dir/adder_t.cpp.o -MF CMakeFiles/tests.dir/adder_t.cpp.o.d -o CMakeFiles/tests.dir/adder_t.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/adder_t.cpp
+tests/CMakeFiles/tests.dir/ring_buff_t.cpp.o: tests/CMakeFiles/tests.dir/flags.make
+tests/CMakeFiles/tests.dir/ring_buff_t.cpp.o: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/ring_buff_t.cpp
+tests/CMakeFiles/tests.dir/ring_buff_t.cpp.o: tests/CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/tests.dir/ring_buff_t.cpp.o"
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/tests.dir/ring_buff_t.cpp.o -MF CMakeFiles/tests.dir/ring_buff_t.cpp.o.d -o CMakeFiles/tests.dir/ring_buff_t.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/ring_buff_t.cpp
 
-tests/CMakeFiles/tests.dir/adder_t.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/adder_t.cpp.i"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/adder_t.cpp > CMakeFiles/tests.dir/adder_t.cpp.i
+tests/CMakeFiles/tests.dir/ring_buff_t.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/ring_buff_t.cpp.i"
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/ring_buff_t.cpp > CMakeFiles/tests.dir/ring_buff_t.cpp.i
 
-tests/CMakeFiles/tests.dir/adder_t.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/adder_t.cpp.s"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/adder_t.cpp -o CMakeFiles/tests.dir/adder_t.cpp.s
-
-tests/CMakeFiles/tests.dir/slinked_list_t.cpp.o: tests/CMakeFiles/tests.dir/flags.make
-tests/CMakeFiles/tests.dir/slinked_list_t.cpp.o: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/slinked_list_t.cpp
-tests/CMakeFiles/tests.dir/slinked_list_t.cpp.o: tests/CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/tests.dir/slinked_list_t.cpp.o"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/tests.dir/slinked_list_t.cpp.o -MF CMakeFiles/tests.dir/slinked_list_t.cpp.o.d -o CMakeFiles/tests.dir/slinked_list_t.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/slinked_list_t.cpp
-
-tests/CMakeFiles/tests.dir/slinked_list_t.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/slinked_list_t.cpp.i"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/slinked_list_t.cpp > CMakeFiles/tests.dir/slinked_list_t.cpp.i
-
-tests/CMakeFiles/tests.dir/slinked_list_t.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/slinked_list_t.cpp.s"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/slinked_list_t.cpp -o CMakeFiles/tests.dir/slinked_list_t.cpp.s
-
-tests/CMakeFiles/tests.dir/queue_t.cpp.o: tests/CMakeFiles/tests.dir/flags.make
-tests/CMakeFiles/tests.dir/queue_t.cpp.o: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/queue_t.cpp
-tests/CMakeFiles/tests.dir/queue_t.cpp.o: tests/CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/tests.dir/queue_t.cpp.o"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/tests.dir/queue_t.cpp.o -MF CMakeFiles/tests.dir/queue_t.cpp.o.d -o CMakeFiles/tests.dir/queue_t.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/queue_t.cpp
-
-tests/CMakeFiles/tests.dir/queue_t.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/queue_t.cpp.i"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/queue_t.cpp > CMakeFiles/tests.dir/queue_t.cpp.i
-
-tests/CMakeFiles/tests.dir/queue_t.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/queue_t.cpp.s"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/queue_t.cpp -o CMakeFiles/tests.dir/queue_t.cpp.s
-
-tests/CMakeFiles/tests.dir/stack_t.cpp.o: tests/CMakeFiles/tests.dir/flags.make
-tests/CMakeFiles/tests.dir/stack_t.cpp.o: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/stack_t.cpp
-tests/CMakeFiles/tests.dir/stack_t.cpp.o: tests/CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/tests.dir/stack_t.cpp.o"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/tests.dir/stack_t.cpp.o -MF CMakeFiles/tests.dir/stack_t.cpp.o.d -o CMakeFiles/tests.dir/stack_t.cpp.o -c /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/stack_t.cpp
-
-tests/CMakeFiles/tests.dir/stack_t.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/stack_t.cpp.i"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/stack_t.cpp > CMakeFiles/tests.dir/stack_t.cpp.i
-
-tests/CMakeFiles/tests.dir/stack_t.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/stack_t.cpp.s"
-	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/stack_t.cpp -o CMakeFiles/tests.dir/stack_t.cpp.s
+tests/CMakeFiles/tests.dir/ring_buff_t.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/ring_buff_t.cpp.s"
+	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/tests/ring_buff_t.cpp -o CMakeFiles/tests.dir/ring_buff_t.cpp.s
 
 # Object files for target tests
 tests_OBJECTS = \
 "CMakeFiles/tests.dir/tests.cpp.o" \
-"CMakeFiles/tests.dir/adder_t.cpp.o" \
-"CMakeFiles/tests.dir/slinked_list_t.cpp.o" \
-"CMakeFiles/tests.dir/queue_t.cpp.o" \
-"CMakeFiles/tests.dir/stack_t.cpp.o"
+"CMakeFiles/tests.dir/ring_buff_t.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
 app/tests: tests/CMakeFiles/tests.dir/tests.cpp.o
-app/tests: tests/CMakeFiles/tests.dir/adder_t.cpp.o
-app/tests: tests/CMakeFiles/tests.dir/slinked_list_t.cpp.o
-app/tests: tests/CMakeFiles/tests.dir/queue_t.cpp.o
-app/tests: tests/CMakeFiles/tests.dir/stack_t.cpp.o
+app/tests: tests/CMakeFiles/tests.dir/ring_buff_t.cpp.o
 app/tests: tests/CMakeFiles/tests.dir/build.make
 app/tests: lib/libadder.a
 app/tests: tests/CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../app/tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../app/tests"
 	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests && /usr/bin/cmake -D TEST_TARGET=tests -D TEST_EXECUTABLE=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=tests_TESTS -D TEST_REPORTER= -D TEST_OUTPUT_DIR= -D TEST_OUTPUT_PREFIX= -D TEST_OUTPUT_SUFFIX= -D CTEST_FILE=/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests/tests_tests-b12d07c.cmake -P /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/cmake/CatchAddTests.cmake
 
