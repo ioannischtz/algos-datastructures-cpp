@@ -1,84 +1,13 @@
-Start testing: Nov 16 12:09 EET
+Start testing: Nov 16 19:22 EET
 ----------------------------------------------------------
-1/4 Testing: add_one
-1/4 Test: add_one
-Command: "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests" "add_one"
+1/1 Testing: RingBuff basic operations
+1/1 Test: RingBuff basic operations
+Command: "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests" "RingBuff basic operations"
 Directory: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests
-"add_one" start time: Nov 16 12:09 EET
+"RingBuff basic operations" start time: Nov 16 19:22 EET
 Output:
 ----------------------------------------------------------
-Filters: add_one
-===============================================================================
-All tests passed (3 assertions in 1 test case)
-
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"add_one" end time: Nov 16 12:09 EET
-"add_one" time elapsed: 00:00:00
-----------------------------------------------------------
-
-2/4 Testing: SLinkedList basic operations
-2/4 Test: SLinkedList basic operations
-Command: "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests" "SLinkedList basic operations"
-Directory: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests
-"SLinkedList basic operations" start time: Nov 16 12:09 EET
-Output:
-----------------------------------------------------------
-Filters: SLinkedList basic operations
-SLinkedList: Default Ctor
-SLinkedList: isEmpty()
-SLinkedList: getLength()
-SLinkedList: Dtor
-SLinkedList: clear()
-SLinkedList: Default Ctor
-SLinkedList: insertFirst()
-SNode: ctor with elm
-SLinkedList: isEmpty()
-SNode: ctor with elm
-SLinkedList: isEmpty()
-SLinkedList: isEmpty()
-SLinkedList: getLength()
-SLinkedList: first()
-SLinkedList: isEmpty()
-SLinkedList: last()
-SLinkedList: isEmpty()
-SLinkedList: Dtor
-SLinkedList: clear()
-SNode: Dtor
-SNode: Dtor
-SLinkedList: Default Ctor
-SLinkedList: insertFirst()
-SNode: ctor with elm
-SLinkedList: isEmpty()
-SNode: ctor with elm
-SLinkedList: isEmpty()
-SNode: Dtor
-SNode: Dtor
-SLinkedList: isEmpty()
-SLinkedList: getLength()
-SLinkedList: Dtor
-SLinkedList: clear()
-===============================================================================
-All tests passed (14 assertions in 1 test case)
-
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Passed.
-"SLinkedList basic operations" end time: Nov 16 12:09 EET
-"SLinkedList basic operations" time elapsed: 00:00:00
-----------------------------------------------------------
-
-3/4 Testing: Queue basic operations
-3/4 Test: Queue basic operations
-Command: "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests" "Queue basic operations"
-Directory: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests
-"Queue basic operations" start time: Nov 16 12:09 EET
-Output:
-----------------------------------------------------------
-Filters: Queue basic operations
+Filters: RingBuff basic operations
 ===============================================================================
 All tests passed (10 assertions in 1 test case)
 
@@ -86,27 +15,8 @@ All tests passed (10 assertions in 1 test case)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Queue basic operations" end time: Nov 16 12:09 EET
-"Queue basic operations" time elapsed: 00:00:00
+"RingBuff basic operations" end time: Nov 16 19:22 EET
+"RingBuff basic operations" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/4 Testing: Stack badic operations
-4/4 Test: Stack badic operations
-Command: "/home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/app/tests" "Stack badic operations"
-Directory: /home/ion-hz/Develop/cpp/tutorial/algos-datastructures-cpp/build/tests
-"Stack badic operations" start time: Nov 16 12:09 EET
-Output:
-----------------------------------------------------------
-Filters: Stack badic operations
-===============================================================================
-All tests passed (9 assertions in 1 test case)
-
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"Stack badic operations" end time: Nov 16 12:09 EET
-"Stack badic operations" time elapsed: 00:00:00
-----------------------------------------------------------
-
-End testing: Nov 16 12:09 EET
+End testing: Nov 16 19:22 EET

@@ -1,1 +1,1 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/tests.dir/tests.cpp.o CMakeFiles/tests.dir/adder_t.cpp.o CMakeFiles/tests.dir/slinked_list_t.cpp.o CMakeFiles/tests.dir/queue_t.cpp.o CMakeFiles/tests.dir/stack_t.cpp.o -o ../app/tests  ../lib/libadder.a 
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/tests.dir/tests.cpp.o CMakeFiles/tests.dir/ring_buff_t.cpp.o -o ../app/tests  ../lib/libadder.a 
